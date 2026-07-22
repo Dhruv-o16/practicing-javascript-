@@ -116,6 +116,9 @@ const averageAge = (ageJonas + ageSarah) / 2;
 console.log(ageJonas, ageSarah, averageAge);
 */
 
+// Stings and Template Literals...
+
+/*
 const firstName = "Jonas";
 const job = "teacher";
 const birthYear = 1991;
@@ -157,3 +160,4 @@ console.log(jonas2);
 
 const jonas2New = `I'm ${lastName}, a ${year2 - birthYear2} years old ${job2}!`;
 console.log(jonas2New);
+*/
