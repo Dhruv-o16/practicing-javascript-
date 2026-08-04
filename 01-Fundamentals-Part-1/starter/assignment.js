@@ -121,7 +121,7 @@ if (BMIMark > BMIJohn) {
 */
 
 // Coding exercise 3: Challenge #3
-
+/*
 const scoreDolphins = (96 + 108 + 89) / 3;
 const scoreKoalas = (96 + 108 + 89) / 3;
 
@@ -134,3 +134,4 @@ if (scoreDolphins > scoreKoalas) {
 } else {
   console.log("Both win the trophy");
 }
+*/
