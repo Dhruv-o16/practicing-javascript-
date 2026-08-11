@@ -281,6 +281,7 @@ if (hasDriversLicense && hasGoodVision && !isTired) {
 */
 
 // Switch statement
+/*
 const day = "monday";
 
 switch (day) {
@@ -320,3 +321,4 @@ if (day === "manday") {
 } else {
   console.log("Not a valid day!");
 }
+*/
