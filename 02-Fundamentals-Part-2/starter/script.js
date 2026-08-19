@@ -33,6 +33,7 @@ const appleOrangeJuice = fruitProcessor(2, 4);
 console.log(appleOrangeJuice);
 */
 
+/*
 // Function declaration
 function calcAge1(birthYear) {
   // function declaration can be defined later as below. You can call a function declaration before you define it but it not such a good idea in many cases but you can do it if necessary.
@@ -58,3 +59,36 @@ const calcAge3 = function (birthYear) {
 };
 
 console.log(age3);
+*/
+
+/*
+// Arrow functions
+const calcAge3 = birthYear => 2037 - birthYear;
+const age3 = calcAge3(1991);
+console.log(age3);
+
+// Can we use arrow function all the time, the answer is no because it's the fact that arrow functions do not get a so-called (this) keyword.
+
+const yearsUntilRetirement = (birthYear, firstName) => {
+  const age = 2037 - birthYear;
+  const retirement = 65 - age;
+  //   return retirement;
+  return `${firstName} retires in ${retirement} years.`;
+};
+
+console.log(yearsUntilRetirement(1991, 'Jonas'));
+console.log(yearsUntilRetirement(1980, 'Bob'));
+*/
+
+/*
+// Another method to find the retirement age.
+const yearsUntilRetirement = (birthYear, retirementAge = 65) => {
+  const currentYear = new Date().getFullYear();
+  const age = currentYear - birthYear;
+  const yearsLeft = retirementAge - age;
+
+  return Math.max(yearsLeft, 0);
+};
+
+console.log(yearsUntilRetirement(1991));
+*/
