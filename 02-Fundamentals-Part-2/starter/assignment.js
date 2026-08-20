@@ -1,7 +1,7 @@
 'use strict';
 
 // Functions Practice.
-
+/*
 // Function decelaration
 function calcAge1(birthYear) {
   return 2037 - birthYear;
@@ -34,3 +34,4 @@ const yearsUntilRetirement = (birthYear, firstName) => {
 
 console.log(yearsUntilRetirement(1991, 'Jonas'));
 console.log(yearsUntilRetirement(1980, 'Bob'));
+*/
