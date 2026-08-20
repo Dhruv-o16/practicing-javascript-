@@ -92,3 +92,27 @@ const yearsUntilRetirement = (birthYear, retirementAge = 65) => {
 
 console.log(yearsUntilRetirement(1991));
 */
+
+// Functions Calling Other Functions
+
+// const fruitProcessor = (apples, oranges) => {
+//   const juice = `Juice with ${apples} apples and ${oranges} oranges.`;       // Tried the below function as an arrow function to see how it works
+//   return juice;
+// };
+// console.log(fruitProcessor(5, 3));
+
+// This is called functions calling other functions
+/*
+function cutFruitPieces(fruit) {
+  return fruit * 4;
+}
+
+function fruitProcessor(apples, oranges) {
+  const applePieces = cutFruitPieces(apples);
+  const orangesPieces = cutFruitPieces(oranges);
+
+  const juice = `Juice with ${applePieces} pieces of apples and ${orangesPieces} pieces of oranges.`;
+  return juice;
+}
+console.log(fruitProcessor(2, 3));
+*/
