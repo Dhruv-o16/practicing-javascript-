@@ -53,7 +53,7 @@ console.log(fruitProcessor(2, 3));
 */
 
 // Reviewing Functions
-
+/*
 const calcAge = function (birthYear) {
   return 2037 - birthYear;
 };
@@ -73,8 +73,9 @@ const yearsUntilRetirement = function (birthYear, firstName) {
 
 console.log(yearsUntilRetirement(1991, 'Jonas'));
 console.log(yearsUntilRetirement(1970, 'Mike'));
+*/
 
-// Coding Exercise: Challenge #1
+// Function Coding Exercise: Challenge #1
 
 const calcAverage = (a, b, c) => (a + b + c) / 3;
 console.log(calcAverage(3, 4, 5));
@@ -94,3 +95,5 @@ const checkWinner = function (avgDolphins, avgKoalas) {
 };
 checkWinner(scoreDolphins, scoreKoalas);
 checkWinner(576, 111);
+
+// Test 2
