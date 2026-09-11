@@ -163,3 +163,37 @@ console.log(carrotJuice);
 // Reusing the function with different inputs
 const carrotBeetrootJuice = vegetableProcessor(2, 4);
 console.log(carrotBeetrootJuice);
+
+// Functions helps us write DRY code (Don't Repeat Yourself), which is an important clean code principle.
+
+// Functions Declarations vs. Expressions.
+
+// Functions Declaration: It can be called before they're defined in the code.
+function calcAge1(birthYear) {
+  return 2037 - birthYear;
+}
+
+const age1 = calcAge1(1991);
+console.log(age1);
+
+// Function Expression: It cannot be called before they're defined in the code.
+const calcAge2 = function (birthYear) {
+  return 2037 - birthYear;
+};
+
+const age2 = calcAge2(1991);
+console.log(age1, age2); // Both produce the same result
+
+// Arrow function with one parameter and implicit return.
+const calcAge3 = birthYear => 2037 - birthYear;
+const age3 = calcAge3(1991);
+console.log(age3);
+
+// Arrow function with multiple parameters and multiple lines of code.
+const yearsUntilRetirement = (birthYear, firstName) => {
+  const age = 2037 - birthYear;
+  const retirement = 65 - age;
+  return `${firstName} retires in ${retirement} years!`;
+};
+
+console.log(yearsUntilRetirement(1991, 'Jonas'));
