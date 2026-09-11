@@ -105,3 +105,38 @@ scoreKoalas = calcAverage(23, 34, 27);
 console.log(scoreDolphins, scoreKoalas);
 checkWinner(scoreDolphins, scoreKoalas);
 */
+
+// Practicing Functions...
+/*
+// Temperature Converter script:
+// Function to convert Celsius to Fahrenheit
+function celsiusFahrenheit(celsius) {
+  let fehrenheit = (celsius * 9) / 5 + 32;
+  return fehrenheit;
+}
+
+// Function to evaluate the weather message based on Fahrenheit
+function getWeatherMessage(fehrenheit) {
+  if (fehrenheit > 85) {
+    return "It's a hot day! ☀️";
+  } else if (fehrenheit < 50) {
+    return "It's a bit chilly! 🧥";
+  } else {
+    return 'The weather is lovely! 😊';
+  }
+}
+
+// Testing the function together
+let currentTempC = 28;
+
+// Call the first function to convert the temperature
+let convertedF = celsiusFahrenheit(currentTempC);
+
+// Pass that result into the second function
+let advice = getWeatherMessage(convertedF);
+
+// Print the final output to the console
+console.log('Temperature in Celsius: ' + currentTempC + '°C');
+console.log('Temperature in Fehrenheit: ' + '°F');
+console.log(advice);
+*/
