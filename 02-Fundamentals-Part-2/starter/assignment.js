@@ -142,6 +142,7 @@ console.log(advice);
 */
 
 // Function revision...
+/*
 function logger() {
   console.log('My name is Jonas!');
 }
@@ -197,3 +198,22 @@ const yearsUntilRetirement = (birthYear, firstName) => {
 };
 
 console.log(yearsUntilRetirement(1991, 'Jonas'));
+*/
+
+// Functions Calling Other Functions...
+
+// Function to cut fruit into pieces.
+const cutPieces = function (fruit) {
+  return fruit * 4;
+};
+
+// Function that uses the cutPieces function
+const fruitProcessor = function (apples, oranges) {
+  const applePieces = cutPieces(apples);
+  const orangePieces = cutPieces(oranges);
+
+  const juice = `Juice with ${applePieces} pieces of apple and ${orangePieces} pieces of orange.`;
+  return juice;
+};
+
+console.log(fruitProcessor(2, 3));
