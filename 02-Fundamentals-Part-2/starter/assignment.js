@@ -140,3 +140,26 @@ console.log('Temperature in Celsius: ' + currentTempC + '°C');
 console.log('Temperature in Fehrenheit: ' + '°F');
 console.log(advice);
 */
+
+// Function revision...
+function logger() {
+  console.log('My name is Jonas!');
+}
+
+logger();
+
+// Functions can receive input data (parameters) and return output data. And the simplest form of a function is a function declaration as below.
+
+function vegetableProcessor(carrots, beetroots) {
+  console.log(carrots, beetroots);
+  const juice = `Juice with ${carrots} carrots and ${beetroots} beetroots.`;
+  return juice;
+}
+
+// Using the function with arguments 5 and 0
+const carrotJuice = vegetableProcessor(5, 0);
+console.log(carrotJuice);
+
+// Reusing the function with different inputs
+const carrotBeetrootJuice = vegetableProcessor(2, 4);
+console.log(carrotBeetrootJuice);
