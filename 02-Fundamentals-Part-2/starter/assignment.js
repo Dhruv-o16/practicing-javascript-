@@ -201,7 +201,7 @@ console.log(yearsUntilRetirement(1991, 'Jonas'));
 */
 
 // Functions Calling Other Functions...
-
+/*
 // Function to cut fruit into pieces.
 const cutPieces = function (fruit) {
   return fruit * 4;
@@ -217,3 +217,4 @@ const fruitProcessor = function (apples, oranges) {
 };
 
 console.log(fruitProcessor(2, 3));
+*/
