@@ -218,3 +218,37 @@ const fruitProcessor = function (apples, oranges) {
 
 console.log(fruitProcessor(2, 3));
 */
+
+const cutPieces = function (fruit) {
+  return fruit * 4;
+};
+
+const fruitProcessor = function (apples, oranges) {
+  const applePieces = cutPieces(apples);
+  const orangePieces = cutPieces(oranges);
+
+  const juice = `Juice with ${applePieces} pieces of apple and ${orangePieces} pieces of orange.`;
+  return juice;
+};
+
+console.log(fruitProcessor(2, 3));
+
+// Reviewing Functions...
+
+const calcAge = function (birthYear) {
+  return 2037 - birthYear;
+};
+
+const yearsUntilRetirement = function (birthYear, firstName) {
+  const age = calcAge(birthYear);
+  const retirement = 65 - age;
+
+  if (retirement >= 0) {
+    return `${firstName} retires in ${retirement} years!`;
+  } else {
+    return `${firstName} is already retired 🎉`;
+  }
+};
+
+console.log(yearsUntilRetirement(1991, 'Jonas'));
+console.log(yearsUntilRetirement(1969, 'Mark'));
