@@ -118,7 +118,7 @@ console.log(fruitProcessor(2, 3));
 */
 
 // Introduction to Arrays
-
+/*
 const friend1 = 'Michael';
 const friend2 = 'Steven';
 const friend3 = 'Peter';
@@ -160,3 +160,4 @@ const ages = [
   calcAge(years[years.length - 1]),
 ];
 console.log(ages);
+*/
