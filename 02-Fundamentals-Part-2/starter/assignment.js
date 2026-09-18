@@ -255,3 +255,43 @@ const yearsUntilRetirement = function (birthYear, firstName) {
 console.log(yearsUntilRetirement(1991, 'Jonas'));
 console.log(yearsUntilRetirement(1969, 'Mark'));
 */
+
+// Practicing Functions with Arrays...
+// Function Declaration...
+/*
+function calcTip(bills) {
+  return bills >= 50 && bills <= 300 ? bills * 0.15 : bills * 0.2;
+};
+
+const bills = [125, 555, 44];
+const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+
+const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+
+console.log(bills, tips, totals);
+*/
+
+// Function Expression...
+/*
+const calcTip = function (bills) {
+  return bills >= 50 && bills <= 300 ? bills * 0.15 : bills * 0.2;
+};
+
+const bills = [125, 555, 44];
+const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+
+const totals = [bills[0] + tips[0], bills[0] + tips[0], bills[0] + tips[0]];
+console.log(bills, tips, totals);
+*/
+
+// Arrow Function...
+/*
+const calcTip = bills =>
+  bills >= 50 && bills <= 300 ? bills * 0.15 : bills * 0.2;
+
+const bills = [125, 555, 44];
+const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+
+const totals = [bills[0] + tips[0], bills[0] + tips[0], bills[1] + tips[2]];
+console.log(bills, tips, totals);
+*/
