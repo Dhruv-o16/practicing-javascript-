@@ -369,3 +369,70 @@ console.log(calcAverage([2, 3, 7]));
 console.log(calcAverage(totals));
 console.log(calcAverage(tips));
 */
+
+/*
+// JavaScript function that handles reversing strings, numbers, arrays, and general values:
+function reverse(value) {
+  if (value === null || value === undefined) {
+    return value;
+  }
+
+  // Handle Strings
+  if (typeof value === 'string') {
+    return value.split('').reverse().join('');
+  }
+
+  // Handle Numbers (preserves sign)
+  if (typeof value === 'number') {
+    const reversedNum = parseFloat(
+      Math.abs(value).toString().split('').reverse().join(''),
+    );
+    return Math.sign(value) * reversedNum;
+  }
+
+  // Handle Arrays
+  if (Array.isArray(value)) {
+    return [...value].reverse(); // Returns a new array without mutating the original
+  }
+
+  // Handle Objects (reverse key-value pair order)
+  if (typeof value === 'object') {
+    return Object.fromEntries(Object.entries(value).reverse());
+  }
+
+  return value;
+}
+
+console.log(reverse('Hello'));
+console.log(reverse(-12345));
+console.log(reverse([1, 2, 3, 4]));
+console.log(reverse({ a: 1, b: 2 }));
+*/
+
+// Debugging with the console and Breakpoints...
+/*
+const measureKelvin = function () {
+  const measurement = {
+    type: 'temp',
+    unit: 'Celsius',
+
+    // C) FIX
+    value: Number(prompt('Degrees celsius:')),
+  };
+
+  // B) FIND
+  console.log(measurement);
+
+  // console.log(measurement.value);
+  // console.warn(measurement.value);
+  // console.error(measurement.value);
+
+  const kelvin = measurement.value + 273;
+  return kelvin;
+};
+
+// A) IDENTIFY
+console.log(measureKelvin());
+*/
+
+// Challenge...
