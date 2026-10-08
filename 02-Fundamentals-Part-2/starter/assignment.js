@@ -435,7 +435,7 @@ const measureKelvin = function () {
 console.log(measureKelvin());
 */
 
-// Challenge...
+// Challenge #1
 /*
 const data1 = [17, 21, 23];
 const data2 = [12, 5, -5, 0, 4];
@@ -450,4 +450,74 @@ const printForecast = function (arr) {
   console.log('...' + str);
 };
 printForecast(data1);
+*/
+
+// Coding Challenge #2 with AI ChatGPT
+/*
+function analyzeWorkWeek(hours) {
+  const totalHours = hours.reduce((sum, day) => sum + day, 0);
+
+  const averageDailyHours = Number((totalHours / hours.length).toFixed(1));
+
+  const mostHours = Math.max(...hours);
+  const mostWorkedDay = hours.indexOf(mostHours);
+
+  const daysWorked = hours.filter(day => day > 0).length;
+
+  const isFullTime = totalHours >= 35;
+
+  return {
+    totalHours,
+    averageDailyHours,
+    mostWorkedDay,
+    daysWorked,
+    isFullTime,
+  };
+}
+
+// Example usage
+const weeklyHours = [7.5, 8, 6.5, 0, 8.5, 5, 0];
+const analysis = analyzeWorkWeek(weeklyHours);
+console.log(analysis);
+*/
+
+// Claude Code
+/*
+const DAY_NAMES = [
+  'Monday',
+  'Tuesday',
+  'Wednesday',
+  'Thursday',
+  'Friday',
+  'Saturday',
+  'Sunday',
+];
+
+function analyzeWorkWeek(dailyHours) {
+  if (!Array.isArray(dailyHours) || dailyHours.length === 0) {
+    throw new Error('dailyHours must be a non-empty array of numbers');
+  }
+
+  const totalHours = dailyHours.reduce((sum, h) => sum + h, 0);
+
+  const averageDailyHours =
+    Math.round((totalHours / dailyHours.length) * 10) / 10;
+
+  const maxHours = Math.max(...dailyHours);
+  const maxIndex = dailyHours.indexOf(maxHours);
+
+  const daysWorked = dailyHours.filter(h => h > 0).length;
+
+  return {
+    totalHours,
+    averageDailyHours,
+    busiestDay: maxHours > 0 ? DAY_NAMES[maxIndex] : null,
+    daysWorked,
+    isFullTime: totalHours >= 35,
+  };
+}
+
+const weeklyHours = [7.5, 8, 6.5, 0, 8.5, 5, 0];
+const analysis = analyzeWorkWeek(weeklyHours);
+console.log(analysis);
 */
