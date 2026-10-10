@@ -521,3 +521,77 @@ const weeklyHours = [7.5, 8, 6.5, 0, 8.5, 5, 0];
 const analysis = analyzeWorkWeek(weeklyHours);
 console.log(analysis);
 */
+
+// Practicing JavaScript Fundamental Part 2...
+// Functions: Function declaration, function expression, arrow function and Functions calling other Functions
+/*
+function logger() {
+  console.log('My name is Jonas!');
+}
+
+logger();
+logger();
+*/
+
+/*
+function fruitProcessor(apples, oranges) {
+  console.log(apples, oranges);
+  const juice = `Juice with ${apples} apples and ${oranges} oranges.`;
+  return juice;
+}
+
+const appleJuice = fruitProcessor(5, 0);
+console.log(appleJuice);
+
+const appleOrangeJuice = fruitProcessor(2, 4);
+console.log(appleOrangeJuice);
+*/
+
+// Function Declaration:
+/*
+function calcAge1(birthYear) {
+  return 2037 - birthYear;
+}
+
+const age1 = calcAge1(1991);
+console.log(age1);
+*/
+
+// Function Expression:
+/*
+const calcAge2 = function (birthYear) {
+  return 2037 - birthYear;
+};
+
+const age2 = calcAge2(1991);
+console.log(age1, age2);
+*/
+
+/*
+// This will work
+const age1 = calcAge1(1991);
+
+function calcAge1(birthYear) {
+  return 2037 - birthYear;
+}
+console.log(age1);
+
+// This would cause an error if placed before the function expression
+const age2 = calcAge2(1991);
+
+const calcAge2 = function (birthYear) {
+  return 2037 - birthYear;
+};
+*/
+
+// Arrow Functions
+const calcAge3 = birthYear => 2037 - birthYear;
+const age3 = calcAge3(1991);
+console.log(age3);
+
+const yearsUntilRetirement = (birthYear, firstName) => {
+  const age = 2037 - birthYear;
+  const retirement = 65 - age;
+  return `${firstName} retires in ${retirement} years!`;
+};
+console.log(yearsUntilRetirement(1991, 'Jonas'));
