@@ -529,6 +529,7 @@ function logger() {
   console.log('My name is Jonas!');
 }
 
+// Calling/ running/ invoking the function
 logger();
 logger();
 */
@@ -540,58 +541,63 @@ function fruitProcessor(apples, oranges) {
   return juice;
 }
 
+// Using the function with arguments 5 and 0
 const appleJuice = fruitProcessor(5, 0);
 console.log(appleJuice);
 
+// Reusing the function with different inputs
 const appleOrangeJuice = fruitProcessor(2, 4);
 console.log(appleOrangeJuice);
 */
 
-// Function Declaration:
+// Function Declaration vs Function Expression
 /*
 function calcAge1(birthYear) {
   return 2037 - birthYear;
 }
 
 const age1 = calcAge1(1991);
-console.log(age1);
-*/
 
-// Function Expression:
-/*
 const calcAge2 = function (birthYear) {
   return 2037 - birthYear;
 };
 
 const age2 = calcAge2(1991);
-console.log(age1, age2);
-*/
-
-/*
-// This will work
-const age1 = calcAge1(1991);
-
-function calcAge1(birthYear) {
-  return 2037 - birthYear;
-}
-console.log(age1);
-
-// This would cause an error if placed before the function expression
-const age2 = calcAge2(1991);
-
-const calcAge2 = function (birthYear) {
-  return 2037 - birthYear;
-};
+console.log(age1, age2); // Both produce the same result
 */
 
 // Arrow Functions
+// Arrow function with one parameter and implicit return
+/*
 const calcAge3 = birthYear => 2037 - birthYear;
 const age3 = calcAge3(1991);
 console.log(age3);
 
+// Arrow function with multiple parameters and multiple lines of code
 const yearsUntilRetirement = (birthYear, firstName) => {
   const age = 2037 - birthYear;
   const retirement = 65 - age;
   return `${firstName} retires in ${retirement} years!`;
 };
+
 console.log(yearsUntilRetirement(1991, 'Jonas'));
+*/
+
+// Function calling Other Functions
+/*
+// Function to cut fruit into pieces
+const cutPieces = function (fruit) {
+  return fruit * 4;
+};
+
+// Function that uses the cutPieces function
+const fruitProcessor = function (apples, oranges) {
+  const applePieces = cutPieces(apples);
+  const orangePieces = cutPieces(oranges);
+
+  const juice = `Juice with ${applePieces} pieces of apple and ${orangePieces} pieces of orange`;
+  return juice;
+};
+
+console.log(fruitProcessor(2, 3));
+*/
