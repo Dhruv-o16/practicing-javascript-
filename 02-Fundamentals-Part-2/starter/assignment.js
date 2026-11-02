@@ -687,3 +687,52 @@ if (friends.includes('Peter')) {
   console.log('You have a friend called Peter!');
 }
 */
+
+// Introduction to Objects
+/*
+const jonas = {
+  firstName: 'Jonas',
+  lastName: 'Schmedtmann',
+  age: 2037 - 1991,
+  job: 'teacher',
+  friends: ['Michael', 'Peter', 'Steven']
+};
+*/
+
+// Dot vs. Bracket Notation / There are two ways to access object properties:
+// Dot Notation:
+/*
+const jonas = {
+  firstName: 'Jonas',
+  lastName: 'Schmedtmann',
+  age: 2037 - 1991,
+  job: 'teacher',
+  friends: ['Michael', 'Peter', 'Steven'],
+};
+console.log(jonas.lastName);
+
+// Bracket Notation:
+console.log(jonas['lastName']);
+// The main difference is that bracket notation allows us to use expressions:
+
+const nameKey = 'Name';
+console.log(jonas['first' + nameKey]);
+console.log(jonas['last' + nameKey]);
+// This would NOT work with dot notation:
+// console.log(jonas.'last' + nameKey); // Error
+
+// Bracket notation is useful when we don't know which property to access until runtime:
+const interestedIn = prompt('What do you want to know about Jonas?');
+
+if (jonas[interestedIn]) {
+  console.log(jonas[interestedIn]);
+} else {
+  console.log(
+    'Wrong request! Choose between firstName, lastName, age, job and friends.',
+  );
+}
+// We can also add new properties to objects using either notation:
+jonas.location = 'Portugal';
+jonas['twitter'] = '@jonasschmedtmann';
+console.log(jonas);
+*/
