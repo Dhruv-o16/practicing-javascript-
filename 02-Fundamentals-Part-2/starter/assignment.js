@@ -629,3 +629,61 @@ console.log(friends);
 const jonas = ['Jonas', 'Schmedtmann', 2037 - 1991, 'teacher', friends];
 console.log(jonas);
 */
+
+// Example of using arrays with functions:
+/*
+const calcAge = function (birthYear) {
+  return 2037 - birthYear;
+};
+
+const years = [1990, 1967, 2002, 2010, 2018];
+
+const ages = [
+  calcAge(years[0]),
+  calcAge(years[1]),
+  calcAge(years[years.length - 1]),
+];
+console.log(ages);
+*/
+
+// Basic Array operations (Methods)
+// Adding Elements:
+/*
+const friends = ['Michael', 'Steven', 'Peter'];
+
+// Add to end
+friends.push('Jay');
+console.log(friends);
+
+// Add to beginning
+friends.unshift('John');
+console.log(friends);
+
+// Push and unshift both return the new array length:
+const newLength = friends.push('Andrew');
+console.log(newLength);
+
+// Removing Elements:
+
+// Remove from end
+const popped = friends.pop();
+console.log(friends);
+
+// Remove from beginning
+const shifted = friends.shift();
+console.log(friends);
+console.log(shifted);
+
+// Finding Elements:
+console.log(friends.indexOf('Steven'));
+console.log(friends.indexOf('Bob'));
+
+// ES6 method - return boolean
+console.log(friends.includes('Steven'));
+console.log(friends.includes('Bob'));
+
+// The includes method is useful for conditionals:
+if (friends.includes('Peter')) {
+  console.log('You have a friend called Peter!');
+}
+*/
