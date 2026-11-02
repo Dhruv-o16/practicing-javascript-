@@ -601,3 +601,31 @@ const fruitProcessor = function (apples, oranges) {
 
 console.log(fruitProcessor(2, 3));
 */
+
+// Introduction to Arrays
+/*
+const friends = ['Michael', 'Steven', 'Peter'];
+console.log(friends);
+
+// Alternative syntax (less common)
+// const years = new Array(1991, 1984, 2008, 2020);
+// console.log(years);
+
+// Accessing array elements (using zero-based indexing):
+console.log(friends[0]);
+console.log(friends[2]);
+
+// Getting the array length
+console.log(friends.length);
+
+// Getting the last element
+console.log(friends[friends.length - 1]);
+
+// Arrays can be mutated even when declared with const:
+friends[1] = 'Jay';
+console.log(friends);
+
+// Arrays can hold values of different types:
+const jonas = ['Jonas', 'Schmedtmann', 2037 - 1991, 'teacher', friends];
+console.log(jonas);
+*/
